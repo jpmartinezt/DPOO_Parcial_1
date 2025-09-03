@@ -1,10 +1,10 @@
 package logica;
-import java.util.Date;
+import java.time.LocalDate;
 
 public abstract class Persona {
 	protected int peso;
 	protected int altura;
-	protected Date fechaDeNacimiento;
+	protected LocalDate fechaDeNacimiento;
 	
 	//getters
 
@@ -14,7 +14,7 @@ public abstract class Persona {
 	public int getAltura() {
 		return altura;
 	}
-	public Date getFechaDeNacimiento() {
+	public LocalDate getFechaDeNacimiento() {
 		return fechaDeNacimiento;
 	}
 	
@@ -27,7 +27,7 @@ public abstract class Persona {
 	//Asumimos que después de los 15 la persona no incrementa su estatura
 	
 	//constructor
-	public Persona(int peso, int altura, Date fechaDeNacimiento) {
+	public Persona(int peso, int altura, LocalDate fechaDeNacimiento) {
 		this.peso = peso;
 		this.altura = altura;
 		this.fechaDeNacimiento = fechaDeNacimiento;
@@ -36,5 +36,5 @@ public abstract class Persona {
 	//metodos abstractos de contrato
 	
 	public abstract int calcularEdad();
-	public abstract int calcularTMB();
+	public abstract double calcularTMB();
 }
