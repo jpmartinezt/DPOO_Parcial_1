@@ -2,7 +2,7 @@ package presentacion;
 import java.time.LocalDate;
 import logica.Persona;
 import logica.Hombre;
-import logica.Hombre;
+import logica.Mujer;
 
 public class Principal {
 
