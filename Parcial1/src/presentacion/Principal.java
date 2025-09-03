@@ -1,4 +1,4 @@
-package logica;
+package presentacion;
 import java.time.LocalDate;
 import logica.Persona;
 import logica.Hombre;
