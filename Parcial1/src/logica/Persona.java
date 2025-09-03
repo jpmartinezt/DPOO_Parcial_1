@@ -36,5 +36,5 @@ public abstract class Persona {
 	//metodos abstractos de contrato
 	
 	public abstract int calcularEdad();
-	public abstract double calcularTMB();
+	public abstract double calcularTMB() throws Exception;
 }
